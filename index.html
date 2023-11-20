@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="icon" href="./img/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Poppins:wght@400;600;700&display=swap"rel="stylesheet">
+  <title>GoodLyfe</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="https://youtu.be/dQw4w9WgXcQ?si=gBafETix2R0ehk6g" class="header__inner-img"><img src="img/logo.png" alt=""></a> 
+        <input type="checkbox" id="burger">
+        <label for="burger"></label>
+        <ul  class="header__inner-menu">
+          <li class="menu-item"><a href="#">Classess</a></li>
+          <li><a href="#">Timetable</a></li>
+          <li><a href="#">Clubs</a></li>
+          <li><a href="#">Nutrition</a></li>
+          <li><a href="#">Free Trial</a></li>
+        </ul>
+        <div class="header__inner-search">
+          <div class="search__title">Search</div>
+          <img src="img/Search Icon.svg" alt="" class="search__img">
+        </div>
+        <button class="header__inner-btn">Login</button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="intro">
+      <div class="container">
+        <div class="intro__inner">
+          <div class="intro__inner-title">Welcome to <br>
+          Good<span class="inner-title-btntexts">lyfe</span> Gyms</div>
+          <button class="intro__inner-btn">See the benefits</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div class="form">
+    <div class="container">
+      <div class="form__inner">
+        <form action="./php/main.php" method="post" class="form__registation">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required><br>
+        
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required><br>
+        
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required><br>
+        
+          <label for="message">Message:</label>
+          <textarea id="message" class = "formmessage" name="message" rows="4" cols="50" required></textarea><br>
+        
+          <button type="submit" class="intro__inner-btn">Submit</button>
+        </form>
+        <div class="form__content">
+          <div class="slider-container">
+            <div class="slider">
+              <div class="slide">
+                <img src="./img/baba.jpg" alt="Image 1" class = "slideimg">
+              </div>
+              <div class="slide">
+                <img
+                  src="./img/gantelya.jpg" alt="Image 2" class = "slideimg">
+              </div>
+              <div class="slide">
+                <img src="./img/zal.jpg" alt="Image 3" class = "slideimg">
+                </div>
+                <div class="slider-dots">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+              
+            <div class = "containerbuttons">
+              <button class="prev-btn header__inner-btn">Previous</button>
+              <button class="next-btn header__inner-btn">Next</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./js/slider.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
